@@ -1,0 +1,103 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		}
+	},
+	
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	    ,{
+            "path" : "pages/user/user",
+            "style" : {
+				
+                "navigationBarTitleText": "个人中心",
+                "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/submit/submit",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "日报提交",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/setting/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的配置",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/dailyList/dailyList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "提交列表",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/wiki/wiki",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "帮助文档",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/scanLogin/scanLogin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "扫码登陆",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	
+	"tabBar": {
+		"color":"#000000",
+		"selectedColor": "#2979ff",
+		"list": [{
+			"pagePath":"pages/index/index",
+			"text":"首页",
+			"iconPath":"static/home.png",
+			"selectedIconPath":"static/home_active.png"
+		},{
+			"pagePath":"pages/user/user",
+			"text":"我的",
+			"iconPath":"static/my.png",
+			"selectedIconPath":"static/my_active.png"
+		}]
+	},
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Daily",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
